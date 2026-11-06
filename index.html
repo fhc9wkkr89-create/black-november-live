@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Black November Live</title>
+<meta name="description" content="Sunday, Nov 8, at 12 PM New York time. Join us live for a chance to win an iPad.">
+<meta property="og:title" content="Add Sunday's live session to your calendar">
+<meta property="og:description" content="Sunday, Nov 8, at 12 PM New York time. Join us live for a chance to win an iPad.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+:root{--cyan:#5FF0E6;--navy:#0A0E16;--yellow:#fff;--line:#C9D6E2;--green:#1FA74A;color-scheme:dark}
+html{background:#0A0E16}
+body{min-height:100vh;background:radial-gradient(120% 70% at 50% 0%,#15303A 0%,#0D1520 50%,#0A0E16 100%);color:#fff;font-family:'Ruda',system-ui,sans-serif;
+  padding:max(28px,env(safe-area-inset-top)) 20px max(32px,env(safe-area-inset-bottom));display:flex;justify-content:center}
+main{width:100%;max-width:460px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px}
+.top{display:flex;align-items:center;gap:12px}
+.top img{width:34px;height:34px}
+.pill{border:2px solid var(--cyan);color:var(--cyan);border-radius:999px;padding:6px 14px;font-weight:900;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(34px,10vw,46px);line-height:1.02;font-weight:900;letter-spacing:-.02em;color:var(--yellow);text-wrap:balance}
+.when{width:100%;background:#fff;color:var(--navy);border-radius:18px;padding:16px 18px;display:flex;align-items:center;gap:16px;text-align:left}
+.day{flex:none;width:76px;border-radius:12px;overflow:hidden;text-align:center;box-shadow:inset 0 0 0 2px #CDEFEC}
+.day b{display:block;background:var(--cyan);color:#0A0E16;font-size:11px;letter-spacing:.18em;padding:5px 0}
+.day span{display:block;font-size:38px;font-weight:900;line-height:1.1;padding:2px 0 4px}
+.when p{font-size:19px;font-weight:900;line-height:1.2}
+.when small{display:block;margin-top:4px;font-size:14px;font-weight:700;color:#4A5868}
+.when small.lt{color:#0B7A8E;font-weight:900}
+.when small.lt:empty{display:none}
+.lead{font-size:17px;line-height:1.4;font-weight:700;color:var(--line)}
+.opts{width:100%;display:flex;flex-direction:column;gap:12px}
+.opt{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:62px;padding:14px 18px;border-radius:16px;
+  background:rgba(255,255,255,.08);border:2px solid rgba(95,240,230,.45);color:#fff;text-decoration:none;font-size:18px;font-weight:900;text-align:left}
+.opt small{display:block;font-size:13px;font-weight:700;color:var(--line);margin-top:2px}
+.opt i{font-style:normal;font-size:22px;color:var(--cyan)}
+.opt.best{background:var(--green);border-color:var(--green)}
+.opt.best small,.opt.best i{color:#fff}
+.opt:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+.tag{display:none;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;background:#fff;color:var(--green);border-radius:999px;padding:3px 9px;margin-bottom:6px;width:max-content}
+.opt.best .tag{display:block}
+.perks{width:100%;border-top:1px solid rgba(207,239,245,.25);padding-top:18px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.4;color:var(--line)}
+.perks b{color:#fff}
+.perks a{color:var(--cyan);font-weight:900}
+.hsub{font-size:clamp(18px,5.2vw,21px);line-height:1.3;font-weight:900;color:var(--cyan);text-wrap:balance;margin-top:-8px}
+.hsub i{font-style:normal;color:#fff}
+.warn{width:100%;background:#E01E2B;color:#fff;border-radius:16px;padding:14px 16px;display:flex;align-items:center;gap:12px;text-align:left;font-size:16px;line-height:1.35;font-weight:700;box-shadow:0 0 0 4px rgba(224,30,43,.25)}
+.warn b{font-weight:900}
+.warn svg{flex:none;width:30px;height:30px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.warn{animation:warnin .7s cubic-bezier(.2,.9,.3,1.25) .3s both,warnring 2.6s ease-out 1.1s infinite}
+.warn svg{transform-origin:50% 85%;animation:warnshake 2.6s ease-in-out 1.1s infinite}
+@keyframes warnin{0%{opacity:0;transform:scale(.9)}100%{opacity:1;transform:none}}
+@keyframes warnring{0%{box-shadow:0 0 0 0 rgba(224,30,43,.75)}60%{box-shadow:0 0 0 14px rgba(224,30,43,0)}100%{box-shadow:0 0 0 4px rgba(224,30,43,.25)}}
+@keyframes warnshake{0%,30%,100%{transform:none}6%{transform:rotate(-14deg)}12%{transform:rotate(12deg)}18%{transform:rotate(-8deg)}24%{transform:rotate(5deg)}}
+@media (prefers-reduced-motion:reduce){.warn,.warn svg{animation:none}}
+body.hascd{padding-top:calc(env(safe-area-inset-top) + 98px)}
+.cd{position:fixed;top:0;left:0;right:0;z-index:10;background:var(--cyan);color:var(--navy);display:flex;align-items:center;justify-content:center;gap:12px;
+  padding:calc(env(safe-area-inset-top) + 9px) 16px 9px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+.cd[hidden]{display:none}
+.cdl{font-size:15px;font-weight:900;line-height:1.15;text-align:left;max-width:86px}
+.cdt{display:flex;gap:6px}
+.cdt>span{display:flex;flex-direction:column;align-items:center;min-width:48px;background:var(--navy);color:#fff;border-radius:10px;padding:6px 6px 5px}
+.cdt>span[hidden]{display:none}
+.cdt b{font-size:22px;font-weight:900;line-height:1;font-variant-numeric:tabular-nums}
+.cdt small{font-size:9px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-top:4px}
+.cd.on .cdl{max-width:none;font-size:15px;text-align:center}
+.perks .fine{font-size:13px;opacity:.75}
+</style></head>
+<body class="hascd">
+<div class="cd" id="cd" role="timer"><span class="cdl">Starts in</span><span class="cdt"><span data-u="d"><b>--</b><small>days</small></span><span data-u="h"><b>--</b><small>hrs</small></span><span data-u="m"><b>--</b><small>min</small></span><span data-u="s"><b>--</b><small>sec</small></span></span></div><main>
+<div class="top"><img src="data:image/png;base64,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" alt=""><span class="pill">Black November 2026</span></div>
+<h1>Add Sunday's live session to your calendar</h1>
+<p class="hsub">Join us live for a chance to win an iPad</p>
+<div class="when"><div class="day"><b>NOV</b><span>8</span></div><div><p>Sunday, 12 PM</p><small>New York time</small><small id="localtime" class="lt"></small></div></div>
+<p class="lead">Tap the calendar you use on your phone and confirm. It takes 10 seconds.</p>
+<div class="opts" id="opts">
+  <a class="opt" data-os="apple" href="black-november-live.ics"><span><span class="tag">Best for your phone</span>Apple Calendar<small>iPhone, iPad and Mac, reminder included</small></span><i>+</i></a>
+  <a class="opt" data-os="google" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Black%20November%20Live%20with%20Dr.%20Rhanderson%20Cardoso&dates=20261108T170000Z/20261108T180000Z&details=Dr.%20Rhanderson%20Cardoso%20reveals%20the%20Black%20November%20offer%20to%20join%20The%20Meta-Analysis%20Academy%2C%20live.%0A%0AOne%20person%20watching%20live%20wins%20an%20iPad.%0A%0AWe%27ll%20post%20the%20link%20in%20the%20WhatsApp%20group%20before%20we%20go%20live.&location=Link%20in%20the%20WhatsApp%20group&ctz=America/New_York" target="_blank" rel="noopener"><span><span class="tag">Best for your phone</span>Google Calendar<small>Android and Gmail</small></span><i>+</i></a>
+  <a class="opt" data-os="outlook" href="https://outlook.live.com/calendar/0/deeplink/compose?path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&subject=Black%20November%20Live%20with%20Dr.%20Rhanderson%20Cardoso&startdt=2026-11-08T12%3A00%3A00-05%3A00&enddt=2026-11-08T13%3A00%3A00-05%3A00&body=Dr.%20Rhanderson%20Cardoso%20reveals%20the%20Black%20November%20offer%20to%20join%20The%20Meta-Analysis%20Academy%2C%20live.%0A%0AOne%20person%20watching%20live%20wins%20an%20iPad.%0A%0AWe%27ll%20post%20the%20link%20in%20the%20WhatsApp%20group%20before%20we%20go%20live.&location=Link%20in%20the%20WhatsApp%20group" target="_blank" rel="noopener"><span><span class="tag">Best for your phone</span>Outlook<small>Hotmail, Outlook.com</small></span><i>+</i></a>
+  <a class="opt" data-os="office" href="https://outlook.office.com/calendar/0/deeplink/compose?path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&subject=Black%20November%20Live%20with%20Dr.%20Rhanderson%20Cardoso&startdt=2026-11-08T12%3A00%3A00-05%3A00&enddt=2026-11-08T13%3A00%3A00-05%3A00&body=Dr.%20Rhanderson%20Cardoso%20reveals%20the%20Black%20November%20offer%20to%20join%20The%20Meta-Analysis%20Academy%2C%20live.%0A%0AOne%20person%20watching%20live%20wins%20an%20iPad.%0A%0AWe%27ll%20post%20the%20link%20in%20the%20WhatsApp%20group%20before%20we%20go%20live.&location=Link%20in%20the%20WhatsApp%20group" target="_blank" rel="noopener"><span>Outlook for work<small>Microsoft 365</small></span><i>+</i></a>
+  <a class="opt" data-os="other" href="black-november-live.ics" download><span>Other calendar<small>download the event file (.ics)</small></span><i>+</i></a>
+</div>
+<div class="perks">
+  <p><b>We'll reveal the offer during the live session.</b> To win the iPad, you have to be there live.</p>
+  <p>We'll post the link in the WhatsApp group before we go live.</p>
+  <p class="fine">If someone messages you privately, check the number at <a href="https://metaanalysisacademy.com/checker/">metaanalysisacademy.com/checker</a></p>
+</div>
+</main>
+<script>
+(function(){
+  var ua = navigator.userAgent || '', box = document.getElementById('opts'), pick = null;
+  var apple = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && 'ontouchend' in document) || /Macintosh/.test(ua);
+  if (apple) pick = 'apple'; else if (/Android/.test(ua)) pick = 'google';
+  if (pick) {
+    var el = box.querySelector('[data-os="' + pick + '"]');
+    if (el) { el.classList.add('best'); box.insertBefore(el, box.firstChild); }
+  }
+  try {
+    var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    if (tz && tz !== 'America/New_York') {
+      var d = new Date('2026-11-08T12:00:00-05:00');
+      var wd = d.toLocaleString('en-US', {weekday: 'long'}), tm = d.toLocaleString('en-US', {hour: 'numeric', minute: '2-digit'});
+      document.getElementById('localtime').textContent = "That's " + wd + ' at ' + tm + ' where you are';
+    }
+  } catch (e) {}
+  var cd = document.getElementById('cd');
+  if (cd) {
+    var t0 = Date.parse('2026-11-08T12:00:00-05:00'), t1 = t0 + 3 * 3600e3, two = function (n) { return (n < 10 ? '0' : '') + n; };
+    var tick = function () {
+      var now = Date.now(), s = Math.floor((t0 - now) / 1000);
+      if (now >= t1) { cd.hidden = true; document.body.classList.remove('hascd'); return; }
+      if (s <= 0) { cd.classList.add('on'); cd.innerHTML = '<span class="cdl">We&#39;re live! Tap the link in the WhatsApp group.</span>'; return; }
+      var v = {d: Math.floor(s / 86400), h: Math.floor(s % 86400 / 3600), m: Math.floor(s % 3600 / 60), s: s % 60};
+      for (var u in v) { var el = cd.querySelector('[data-u="' + u + '"]'); el.firstChild.textContent = two(v[u]); }
+      cd.querySelector('[data-u="d"]').hidden = v.d === 0;
+      setTimeout(tick, 1000 - now % 1000);
+    };
+    tick();
+  }
+})();
+</script>
+</body></html>

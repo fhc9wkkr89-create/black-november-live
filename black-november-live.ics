@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Meta-Analysis Academy//Black November 2026 Live//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:live-repescagem-black-november-2026-int@metaanalysisacademy.com
+DTSTAMP:20261106T150000Z
+DTSTART:20261108T170000Z
+DTEND:20261108T180000Z
+SUMMARY:Black November Live with Dr. Rhanderson Cardoso
+DESCRIPTION:Dr. Rhanderson Cardoso reveals the Black November offer to join
+  The Meta-Analysis Academy\, live.\n\nOne person watching live wins an iPa
+ d.\n\nWe'll post the link in the WhatsApp group before we go live.
+LOCATION:Link in the WhatsApp group
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:Black November Live starts in 1 hour
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Black November Live starts in 10 minutes. The link is in the Wh
+ atsApp group.
+END:VALARM
+END:VEVENT
+END:VCALENDAR
